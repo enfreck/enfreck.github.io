@@ -703,7 +703,7 @@ div.media-body > p {
 div.contactButtonContainer {
   display: grid;
   grid-template-columns: 50% 50%;
-
+  color: transparent;
 }
 
 button.contact-button {
@@ -712,16 +712,15 @@ button.contact-button {
   height: fit-content;
   background-color: white;
   color: black;
-
-  margin: auto;
+  /* margin: auto; */
+  margin: 0.5rem auto 0.5rem auto;
   border: solid grey 1px;
   border-radius: 5px;
-
-  box-shadow: 10px 5px 5px lightgrey;
+  box-shadow: 10px 5px 5px rgba(153, 153, 153, 0.3);
 }
 button.contact-button:hover {
   background-color: grey;
-  opacity: 30%;
+  opacity: 50%;
 }
 button.contact-button > img {
   display: block;
@@ -730,4 +729,22 @@ button.contact-button > img {
   margin-top: 2rem;
   margin-bottom: 2rem;
   width: 50%;
+}
+
+@media screen and (max-width:900px) {
+  div.contactButtonContainer {
+    grid-template-columns: auto;
+  }
+
+  .d-flex {
+    flex-direction: column;
+  }
+
+  .d-flex > small {
+    margin-bottom: 1rem;
+  }
+
+  .d-flex > p {
+    margin-bottom: 0;
+  }
 }
