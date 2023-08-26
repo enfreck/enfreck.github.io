@@ -3,6 +3,13 @@
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
   url: education.html
   first: true
+
+- name: Organizations
+  id: organizations
+  description:
+  content: 
+  url: organizations.html
+  first: false
   
 - name: Coursework
   id: courses
@@ -23,4 +30,3 @@
   content: 
   url: projects.html
   first: false
-

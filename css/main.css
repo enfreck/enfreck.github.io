@@ -720,7 +720,7 @@ button.contact-button {
   box-shadow: 10px 5px 5px lightgrey;
 }
 button.contact-button:hover {
-  background-color: #149f98;
+  background-color: grey;
   opacity: 30%;
 }
 button.contact-button > img {

@@ -7,8 +7,17 @@
   StartDate: May 2023
   EndDate: August 2023
   first: true   # one must be true to properly display
+  tech: 
+    - rust
+    - go
+    - python
+    - ghidra
+    - wireshark
   description: >
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    At MITRE, I worked with the MITRE ATT&CK Evaluations team to develop and improve malware used in past and upcoming rounds of evaluations.  
+    One project involved updating a Linux backdoor.  
+    This consisted of adding a handler to a C2 framework, updating the implant to be persistent and user configurable, creating and evaluating custom ethernet packets using Wireshark, and analyzing an example malware sample using Ghidra.  
+    Additionally, I sat in on a cyber exercise which evaluated deception technologies, and placed third in an intern embedded systems capture the flag competition. 
 
 - School: Google
   Degree: 
@@ -20,8 +29,17 @@
   EndDate: August 2022
   first: false
   Icon: /assets/img/icons/2x/princeton-crop.png      # Make this icon small, think 30px/30px
+  tech: 
+    - java
+    - c
+    - c++
+    - go
+    - sql
   description: >
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    On Google Cloud’s Event Threat Detection Team, I initially worked on building customer-configurable detection modules to identify IAM-based privilege escalation attacks.  
+    After finishing the project two months early, I picked up a project that would allow security engineers to run YARA-L and SQL rules against Google Cloud Platform logs in real time.  
+    I specifically worked on parsing log data out into a table so commands could be run against them.  
+    As of now, the custom module code is in production.
 
 - School: Google
   Degree: 
@@ -32,6 +50,12 @@
   StartDate: May 2021
   EndDate: August 2021
   first: false
-  Icon: /assets/img/icons/2x/princeton-crop.png      # Make this icon small, think 30px/30px
+  tech: 
+    - c++
+    - bazel
+    - git
   description: >
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    On Google Ad’s Cross Media Measurement Team, I collaborated with Facebook, Amazon, and other companies to measure ad views across various media platforms to provide users with more diverse ads and advertising companies with more accurate data.   
+    I specifically worked on securing user data. 
+    This involved building a library to encrypt identifier-payload pairs for a Panel Match Batch Lookup Workflow.  
+    Encryption consisted of methods such as AES, HKDF, SHA256, and Deterministic Commutative Encryption. As of now, the code is in production.

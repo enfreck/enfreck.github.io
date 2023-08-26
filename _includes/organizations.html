@@ -1,0 +1,19 @@
+ {% assign theme = site.data.themes[site.ui_theme] %}
+ <ul class="list-unstyled">
+  {% for entry in site.data.organizations %}
+    <li class="media">
+      <a href="{{entry.Link}}">
+        <img src="{{ entry.Icon }}" style="width:70px; height:70px" class="mr-3" alt="...">
+      </a>
+      <div class="media-body" style="margin:auto">
+        <span>
+          <h5 style="font-family:{{ theme.education-entry-font}};font-size:{{ theme.education-entry-size }};color:{{theme.education-font-color}};display:inline">{{ entry.Club }} -  </h5>
+          <p style="font-family:{{ theme.education-entry-font}};font-size:{{ theme.education-section-size }};color:{{theme.education-font-color}};display:inline">{{ entry.Start }} - {{entry.End}}</p>
+        </span>
+        {% for position in entry.Positions %}
+          <p style="font-family:{{ theme.education-entry-font}};font-size:{{ theme.education-section-size }};color:{{theme.education-font-color}};"><i>{{ position }}</i></p>
+        {% endfor %}
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
