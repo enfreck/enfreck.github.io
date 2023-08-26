@@ -61,8 +61,9 @@
 <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script> 
 
 <!--  GIT TALK CDN  for comment system -->
+<!--
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
-<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script> 
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script> -->
 
 
 <!-- Provides information about an author or another person -->
@@ -84,23 +85,23 @@
 <link rel="mask-icon" href="/assets/img/icons/safari-pinned-tab.svg" color="#5bbad5">
 
 <meta property="fb:app_id" content="">
-<meta property="og:url" content="https://enfreck.github.io/">
+<meta property="og:url" content="/contact.html">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Erin Freck, Erin Freck's personal website">
-<meta property="og:image" content="/assets/img/icon/favicon-16x16.png">
+<meta property="og:title" content="">
+<meta property="og:image" content="">
 <meta property="og:image:alt" content="">
-<meta property="og:description" content="Erin Freck's personal website">
-<meta property="og:site_name" content="Erin Freck">
+<meta property="og:description" content="">
+<meta property="og:site_name" content="">
 <meta property="og:locale" content="en_US">
-<meta property="article:author" content="Erin Freck">
+<meta property="article:author" content="">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@">
 <meta name="twitter:creator" content="@">
-<meta name="twitter:url" content="https://enfreck.github.io/">
-<meta name="twitter:title" content="Erin Freck's personal website">
-<meta name="twitter:description" content="Erin Freck's personal website">
-<meta name="twitter:image" content="/assets/img/icon/favicon-16x16.png">
+<meta name="twitter:url" content="/contact.html">
+<meta name="twitter:title" content="">
+<meta name="twitter:description" content="">
+<meta name="twitter:image" content="">
 <meta name="twitter:image:alt" content="">
 
 <!-- Used for adding in-document CSS -->
@@ -108,14 +109,6 @@
 
 
 <!-- JavaScript & No-JavaScript tags -->
-
-<link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@10.5.0/styles/monokai-sublime.min.css">
-<script src="https://unpkg.com/@highlightjs/cdn-assets@10.5.0/highlight.min.js"></script>
-<!-- and it's easy to individually load additional languages -->
-<script src="https://unpkg.com/@highlightjs/cdn-assets@10.5.0/languages/go.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
-
-
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -127,20 +120,23 @@
     });
 </script> -->
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id="></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', ');
-</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
 
 <noscript>
   <!-- No JS alternative -->
 </noscript>
-  <body style="background-color:;">
+  <head>
+    <title>triangle bg demo</title>
+    <style>
+      body {
+        background-image: url("/assets/img/triangles.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: #332433;
+      }
+    </style>
+  </head>
+  <body>
     
 <nav class="navbar navbar-expand-lg glowing-border mb-4" style="font-family:Poppins;background-color:#432e3f">
   <a class="navbar-brand" href="/index.html">
@@ -182,30 +178,28 @@
   </div>
 </nav>
 
-    <div class="dumbarton-spacer-sm"></div>
-    <div class="container">
-      <style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-</style>
-
-<div class="container">
-  <h1>404</h1>
-
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
-</div>
-
+    <div class="container" style="background-color:transparent">
+      <div class="card border-0" style="background-color:transparent">
+        <div class="card-body" style="background-color:transparent">
+          <p class="card-text">
+            <p style="text-align:center; font-size:24px; font-style:italic; margin-bottom: 5rem;"> I'd love to get to know you, <br> please don't hesitate to reach out to me!</p>
+            <div class="contactButtonContainer">
+              <!-- Email -->
+              <a href="mailto:enfreck@gmail.com" style="text-decoration:none">
+                <button class="contact-button">
+                  <img src="/assets/img/gmail-logo2.png" style="width:auto; height:70px">
+                  <p  style="text-align:center; font-size:18px; font-style:italic;">enfreck@gmail.com</p>
+                </button>
+              </a>
+              <!-- LinkedIn -->
+              <button onclick="window.location.href='https://www.linkedin.com/in/erin-freck/';" class="contact-button">
+                <img src="/assets/img/linkedin-logo.png" style="width:auto; height:70px">
+                <p style="text-align:center; font-size:18px; font-style:italic;">www.linkedin.com/in/erin-freck</p>
+              </button>
+            </div>
+          </p>
+        </div>
+      </div>
     </div>
-    <div class="dumbarton-spacer"></div>
   </body>
 </html>

@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+
+<html>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--
+  The above 2 meta tags *must* come first in the <head>
+  to consistently ensure proper document rendering.
+  Any other head element should come *after* these tags.
+ -->
+<title>Erin Freck</title>
+<!-- Set the base URL for all relative URLs within the document -->
+<base href="https://enfreck.github.io/">
+
+<!--
+  Allows control over where resources are loaded from.
+  Place as early in the <head> as possible, as the tag  
+  only applies to resources that are declared after it.
+-->
+
+<!-- Short description of the document (limit to 150 characters) -->
+<!-- This content *may* be used as a part of search engine results. -->
+<meta name="description" content="Erin Freck's personal website">
+
+<!-- Control the behavior of search engine crawling and indexing -->
+<meta name="robots" content="index,follow"><!-- All Search Engines -->
+<meta name="googlebot" content="index,follow"><!-- Google Specific -->
+
+<!-- Verify website ownership -->
+<meta name="google-site-verification" content=""><!-- Google Search Console -->
+<meta name="yandex-verification" content=""><!-- Yandex Webmasters -->
+<meta name="msvalidate.01" content=""><!-- Bing Webmaster Center -->
+<meta name="alexaVerifyID" content=""><!-- Alexa Console -->
+<meta name="p:domain_verify" content=""><!-- Pinterest Console-->
+<meta name="norton-safeweb-site-verification" content=""><!-- Norton Safe Web -->
+
+<!-- Allows control over how referrer information is passed -->
+<meta name="referrer" content="no-referrer">
+
+<!-- Disable automatic detection and formatting of possible phone numbers -->
+<meta name="format-detection" content="telephone=true">
+
+<!-- Completely opt out of DNS prefetching by setting to "off" -->
+<meta http-equiv="x-dns-prefetch-control" content="on">
+
+<!-- Geo tags -->
+<!-- meta name="ICBM" content="latitude, longitude"-->
+<!-- meta name="geo.position" content="latitude;longitude"-->
+<!-- meta name="geo.region" content="country[-state]"><Country code (ISO 3166-1): mandatory, state code (ISO 3166-2): optional; eg. content="US" / content="US-NY" -->
+<!-- meta name="geo.placename" content="city/town"><eg. content="New York City" -->
+
+<!-- Link to an external CSS file -->
+<link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Courgette&family=Lobster&family=Pacifico&family=Yellowtail&family=Noto+Sans+JP:wght@400;900&family=Poppins:wght@500&family=Righteous&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/css/main.css">
+<!-- BootStrap CDN --> 
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<script src="https://kit.fontawesome.com/32a2b2a489.js" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script> 
+
+<!--  GIT TALK CDN  for comment system -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script> 
+
+
+<!-- Provides information about an author or another person -->
+<link rel="me" href="mailto:">
+<link rel="me" href="sms:+">
+
+<!-- Open Search -->
+<!-- link rel="search" href="/open-search.xml" type="application/opensearchdescription+xml" title="Search Title" -->
+
+<!-- Feeds -->
+<!-- link rel="alternate" href="https://feeds.feedburner.com/example" type="application/rss+xml" title="RSS" -->
+<!-- link rel="alternate" href="https://example.com/feed.atom" type="application/atom+xml" title="Atom 0.3" -->
+
+<!-- For IE 10 and below -->
+<!-- Place favicon.ico in the root directory - no tag necessary -->
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/icons/favicon-16x16.png">
+<link rel="mask-icon" href="/assets/img/icons/safari-pinned-tab.svg" color="#5bbad5">
+
+<meta property="fb:app_id" content="">
+<meta property="og:url" content="https://enfreck.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Erin Freck, Erin Freck's personal website">
+<meta property="og:image" content="/assets/img/icon/favicon-16x16.png">
+<meta property="og:image:alt" content="">
+<meta property="og:description" content="Erin Freck's personal website">
+<meta property="og:site_name" content="Erin Freck">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="Erin Freck">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@">
+<meta name="twitter:creator" content="@">
+<meta name="twitter:url" content="https://enfreck.github.io/">
+<meta name="twitter:title" content="Erin Freck's personal website">
+<meta name="twitter:description" content="Erin Freck's personal website">
+<meta name="twitter:image" content="/assets/img/icon/favicon-16x16.png">
+<meta name="twitter:image:alt" content="">
+
+<!-- Used for adding in-document CSS -->
+
+
+
+<!-- JavaScript & No-JavaScript tags -->
+
+<link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@10.5.0/styles/monokai-sublime.min.css">
+<script src="https://unpkg.com/@highlightjs/cdn-assets@10.5.0/highlight.min.js"></script>
+<!-- and it's easy to individually load additional languages -->
+<script src="https://unpkg.com/@highlightjs/cdn-assets@10.5.0/languages/go.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+<!--
+<script>
+    $(document).ready(function() {
+        $(".toast").toast('show');
+    });
+</script> -->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', ');
+</script>
+
+<noscript>
+  <!-- No JS alternative -->
+</noscript>
+  <body style="background-color:;">
+    
+<nav class="navbar navbar-expand-lg glowing-border mb-4" style="font-family:Poppins;background-color:#432e3f">
+  <a class="navbar-brand" href="/index.html">
+    <h4 style="font-family:Noto Sans JP;font-weight:600;color:#b98798;">Erin Freck</h4>
+  </a>
+  <button class="navbar-toggler text-black" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fas fa-caret-down"></i>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+        
+              <li class="nav-item">
+                  <a href="/assets/pdf/Erin_Freck_Resume.pdf" class="nav-link" style="font-family:Poppins;color:#b98798;">Resume</a>
+              </li>
+        
+              <li class="nav-item">
+                  <a href="contact.html" class="nav-link" style="font-family:Poppins;color:#b98798;">Contact</a>
+              </li>
+        
+    </ul>
+    <ul class="navbar-nav  justify-content-end">
+      <li class="nav-item">
+        
+<!-- Displays Social Media Icons based on _config.yml settings -->
+<span style="color:#CCCCCC;">
+    <i> &nbsp;&nbsp; </i>
+    
+    
+    
+    
+    
+    
+     
+    <i> &nbsp;&nbsp; </i>
+</span>
+
+      </li>
+    </ul>
+  </div>
+</nav>
+
+    <div class="dumbarton-spacer-sm"></div>
+    <div class="container">
+      
+
+<!-- ABOUT ME SECTION -->
+<div class="card mx-auto border-0" style="position:relative;background-color:;">
+  <div class="row">
+    <div class="col-md-4">
+        <img src="/assets/img/avatar/me-vt-2.png" class="img-thumbnail float-left" alt="...">
+    </div>
+    <!-- EDUCATION SECTION -->
+    <div class="col-md-8">
+      <div class="card-body mt-0" style="color:;">
+        <p style="color:;"><h3 id="hi-im-erin-freck">Hi, I’m Erin Freck</h3>
+<p>I am a graduate student in the FoRTE and ITSO labs at Virginia Tech.  I recently graduated Summa Cum Laude with a B.S. Computer Engineering also from Virginia Tech.  In an effort to pursue my passion for cybersecurity, I decided to continue my education to get a M.S. Computer Science with a certificate in Cybersecurity.  My journey started on the blue team side of things, but my interests have taken me towards red team work.  Specifically, I am passionate about offensive non-kinetics and vulnerability research.</p>
+
+<p><a href="/contact.html" class="highlighted">Contact Me</a></p>
+<p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br />
+
+<!-- style="font-family:Poppins;background-color:#432e3f; -->
+
+<!-- HOME HIGHLIGHTS SECTION --> 
+<div class="card mx-auto mb-1 glowing-border"  style="max-width: 100%;">
+  <div class="card-header" style="background-color:#432e3f;">
+    <ul class="nav nav-tabs card-header-tabs" id="test-list" role="tablist">
+      
+        
+          <li class="nav-item">
+            <a class="nav-link active" id="" href="#education" role="tab" aria-controls="education" aria-selected="true" style="font-family:Poppins;color:#b98798;"> Education</a>
+          </li>
+        
+      
+        
+          <li class="nav-item">
+              <a class="nav-link" id="" href="#organizations" role="tab" aria-controls="organizations" aria-selected="true" style="font-family:Poppins;color:#b98798;"> Organizations</a>
+          </li>
+        
+      
+        
+          <li class="nav-item">
+              <a class="nav-link" id="" href="#courses" role="tab" aria-controls="courses" aria-selected="true" style="font-family:Poppins;color:#b98798;"> Coursework</a>
+          </li>
+        
+      
+        
+          <li class="nav-item">
+              <a class="nav-link" id="" href="#work" role="tab" aria-controls="work" aria-selected="true" style="font-family:Poppins;color:#b98798;"> Work Experience</a>
+          </li>
+        
+      
+        
+          <li class="nav-item">
+              <a class="nav-link" id="" href="#research" role="tab" aria-controls="research" aria-selected="true" style="font-family:Poppins;color:#b98798;"> Research</a>
+          </li>
+        
+      
+    </ul>
+  </div>
+  <div class="card-body">          
+      <div class="tab-content mt-3">
+        
+          
+              <div class="tab-pane active overflow-auto" id="education" role="tabpanel">
+                <p class="card-text"> 
+ <h1 class="card-title" style="font-family:Noto Sans JP;font-size:24px;color:;">Education</h1>
+  <ul class="list-unstyled">
+  
+    <li class="media">
+      <img src="/assets/img/VT-logo.png" style="width:70px; height:70px" class="mr-3" alt="...">
+      <div class="media-body">
+        <span>
+          <h5 style="font-family:Noto Sans JP;font-size:18px;color:;display:inline">Virginia Tech - </h5>
+          <p style="font-family:Noto Sans JP;font-size:15px;color:;display:inline">December 2024</p>
+        </span>
+        <p style="font-family:Noto Sans JP;font-size:15px;color:;"><i>M.S. Computer Science</i></p>
+        <p style="font-family:Noto Sans JP;font-size:15px;color:;"><i>Graduate Certificate in Cybersecurity</i></p>
+      </div>
+    </li>
+    
+    <li class="media">
+      <img src="/assets/img/VT-logo.png" style="width:70px; height:70px" class="mr-3" alt="...">
+      <div class="media-body">
+        <span>
+          <h5 style="font-family:Noto Sans JP;font-size:18px;color:;display:inline">Virginia Tech - </h5>
+          <p style="font-family:Noto Sans JP;font-size:15px;color:;display:inline">May 2023</p>
+        </span>
+        <p style="font-family:Noto Sans JP;font-size:15px;color:;"><i>B.S. Computer Engineering - Summa Cum Laude</i></p>
+        <p style="font-family:Noto Sans JP;font-size:15px;color:;"><i>Minors in Computer Science and Cybersecurity</i></p>
+      </div>
+    </li>
+    
+  </ul>
+
+  <br />
+
+  <h1 class="card-title" style="font-family:Noto Sans JP;font-size:24px;color:;">Honors</h1>
+  <ul class="list-unstyled">
+  
+    <li class="media">
+      <img src="/assets/img/PBK2.png" class="mr-3" style="width:70px; height:70px" alt="...">
+      <div class="media-body" style="margin:auto">
+        <h5 style="font-family:Noto Sans JP;font-size:18px;color:;display:inline">Phi Beta Kappa</h5>
+        <p style="font-family:Noto Sans JP;font-size:15px;color:;"><i>Liberal Arts and Sciences</i></p>
+      </div>
+    </li>
+    
+    <li class="media">
+      <img src="/assets/img/TBP2.png" class="mr-3" style="width:70px; height:70px" alt="...">
+      <div class="media-body" style="margin:auto">
+        <h5 style="font-family:Noto Sans JP;font-size:18px;color:;display:inline">Tau Beta Pi</h5>
+        <p style="font-family:Noto Sans JP;font-size:15px;color:;"><i>Engineering</i></p>
+      </div>
+    </li>
+    
+    <li class="media">
+      <img src="/assets/img/HKN2.png" class="mr-3" style="width:70px; height:70px" alt="...">
+      <div class="media-body" style="margin:auto">
+        <h5 style="font-family:Noto Sans JP;font-size:18px;color:;display:inline">Eta Kappa Nu</h5>
+        <p style="font-family:Noto Sans JP;font-size:15px;color:;"><i>Institute of Electrical and Electronics Engineers</i></p>
+      </div>
+    </li>
+    
+  </ul></p>
+              </div>
+          
+        
+           
+          
+              <div class="tab-pane overflow-auto" id="organizations" role="tabpanel" aria-labelledby="organizations-tab">  
+                <p><i></i></p>
+                <p class="card-text"> 
+ <ul class="list-unstyled">
+  
+    <li class="media">
+      <a href="https://cybervt.org/">
+        <img src="/assets/img/cyberVTlogo.png" style="width:70px; height:70px" class="mr-3" alt="...">
+      </a>
+      <div class="media-body" style="margin:auto">
+        <span>
+          <h5 style="font-family:Noto Sans JP;font-size:18px;color:;display:inline">Cybersecurity Club -  </h5>
+          <p style="font-family:Noto Sans JP;font-size:15px;color:;display:inline">Jan 2023 - Current</p>
+        </span>
+        
+          <p style="font-family:Noto Sans JP;font-size:15px;color:;"><i>Aug 2023 - Current | Treasurer</i></p>
+        
+      </div>
+    </li>
+    
+    <li class="media">
+      <a href="https://www.vtbolt.com/">
+        <img src="/assets/img/bolt-logo.png" style="width:70px; height:70px" class="mr-3" alt="...">
+      </a>
+      <div class="media-body" style="margin:auto">
+        <span>
+          <h5 style="font-family:Noto Sans JP;font-size:18px;color:;display:inline">BOLT Electric Motorcycle -  </h5>
+          <p style="font-family:Noto Sans JP;font-size:15px;color:;display:inline">Oct 2019 - May 2023</p>
+        </span>
+        
+          <p style="font-family:Noto Sans JP;font-size:15px;color:;"><i>Aug 2022 - May 2023 | Controls Lead</i></p>
+        
+          <p style="font-family:Noto Sans JP;font-size:15px;color:;"><i>Aug 2021 - May 2022 | SEC Representative</i></p>
+        
+      </div>
+    </li>
+    
+    <li class="media">
+      <a href="https://www.vtswe.org/">
+        <img src="/assets/img/swe-logo.jpg" style="width:70px; height:70px" class="mr-3" alt="...">
+      </a>
+      <div class="media-body" style="margin:auto">
+        <span>
+          <h5 style="font-family:Noto Sans JP;font-size:18px;color:;display:inline">Society of Women Engineers -  </h5>
+          <p style="font-family:Noto Sans JP;font-size:15px;color:;display:inline">Aug 2019 - May 2023</p>
+        </span>
+        
+          <p style="font-family:Noto Sans JP;font-size:15px;color:;"><i>Aug 2022 - May 2023 | President</i></p>
+        
+          <p style="font-family:Noto Sans JP;font-size:15px;color:;"><i>Aug 2021 - May 2022 | Treasurer</i></p>
+        
+          <p style="font-family:Noto Sans JP;font-size:15px;color:;"><i>Aug 2020 - May 2021 | Evening with the Industries Chair</i></p>
+        
+      </div>
+    </li>
+    
+    <li class="media">
+      <a href="https://www.galipatiacommunity.com/">
+        <img src="/assets/img/galipatia-logo.png" style="width:70px; height:70px" class="mr-3" alt="...">
+      </a>
+      <div class="media-body" style="margin:auto">
+        <span>
+          <h5 style="font-family:Noto Sans JP;font-size:18px;color:;display:inline">Galipatia Living Learning Community -  </h5>
+          <p style="font-family:Noto Sans JP;font-size:15px;color:;display:inline">Aug 2019 - May 2022</p>
+        </span>
+        
+          <p style="font-family:Noto Sans JP;font-size:15px;color:;"><i>Aug 2021 - May 2022 | Data Committee Liasion</i></p>
+        
+          <p style="font-family:Noto Sans JP;font-size:15px;color:;"><i>Aug 2020 - May 2021 | Mentor and Committee Member</i></p>
+        
+      </div>
+    </li>
+    
+    <li class="media">
+      <a href="">
+        <img src="/assets/img/fencing-logo.png" style="width:70px; height:70px" class="mr-3" alt="...">
+      </a>
+      <div class="media-body" style="margin:auto">
+        <span>
+          <h5 style="font-family:Noto Sans JP;font-size:18px;color:;display:inline">Fencing -  </h5>
+          <p style="font-family:Noto Sans JP;font-size:15px;color:;display:inline">Apr 2022 - Current</p>
+        </span>
+        
+          <p style="font-family:Noto Sans JP;font-size:15px;color:;"><i>Sabre</i></p>
+        
+      </div>
+    </li>
+    
+    <li class="media">
+      <a href="">
+        <img src="/assets/img/VT-logo.png" style="width:70px; height:70px" class="mr-3" alt="...">
+      </a>
+      <div class="media-body" style="margin:auto">
+        <span>
+          <h5 style="font-family:Noto Sans JP;font-size:18px;color:;display:inline">Music Ensembles -  </h5>
+          <p style="font-family:Noto Sans JP;font-size:15px;color:;display:inline">Aug 2019 - May 2022</p>
+        </span>
+        
+          <p style="font-family:Noto Sans JP;font-size:15px;color:;"><i>Violist</i></p>
+        
+      </div>
+    </li>
+    
+    <li class="media">
+      <a href="https://www.vthunt.com/">
+        <img src="/assets/img/hunt-logo.png" style="width:70px; height:70px" class="mr-3" alt="...">
+      </a>
+      <div class="media-body" style="margin:auto">
+        <span>
+          <h5 style="font-family:Noto Sans JP;font-size:18px;color:;display:inline">VTHunt -  </h5>
+          <p style="font-family:Noto Sans JP;font-size:15px;color:;display:inline">Apr 2020 - Current</p>
+        </span>
+        
+      </div>
+    </li>
+    
+  </ul></p>              
+              </div> 
+            
+          
+        
+           
+          
+              <div class="tab-pane overflow-auto" id="courses" role="tabpanel" aria-labelledby="courses-tab">  
+                <div class="list-group">
+                
+                  <button type="button" class="list-group-item text-left">CS 5204 - Operating Systems</button>
+                
+                  <button type="button" class="list-group-item text-left">CS 5560 - Fundamentals of Information Security</button>
+                
+                  <button type="button" class="list-group-item text-left">CS 5244 - Web Application Development</button>
+                
+                  <button type="button" class="list-group-item text-left">CS 4264 - Principles of Computer Security</button>
+                
+                  <button type="button" class="list-group-item text-left">ECE 4560 - Computer and Network Security Fundamentals</button>
+                
+                  <button type="button" class="list-group-item text-left">ECE 4424 - Machine Learning</button>
+                
+                  <button type="button" class="list-group-item text-left">ECE 4524 - Artificial Intelligence</button>
+                
+                  <button type="button" class="list-group-item text-left">MATH 4175 - Cryptography</button>
+                
+                  <button type="button" class="list-group-item text-left">CS 3264 - Software Reverse Engineering</button>
+                
+                </div>
+              </div>
+              
+          
+        
+           
+          
+              <div class="tab-pane overflow-auto" id="work" role="tabpanel" aria-labelledby="work-tab">  
+                <p><i></i></p>
+                    
+                    <div class="list-group">
+                      <div class="list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-between">
+                          <h5 class="mb-1">MITRE</h5>
+                          <p>Cyber Threat Intelligence and Adversary Emulation</p>
+                          <small>May 2023 - August 2023</small>
+                        </div>
+                        <p class="mb-1">At MITRE, I worked with the MITRE ATT&CK Evaluations team to develop and improve malware used in past and upcoming rounds of evaluations.   One project involved updating a Linux backdoor.   This consisted of adding a handler to a C2 framework, updating the implant to be persistent and user configurable, creating and evaluating custom ethernet packets using Wireshark, and analyzing an example malware sample using Ghidra.   Additionally, I sat in on a cyber exercise which evaluated deception technologies, and placed third in an intern embedded systems capture the flag competition. 
+</p>
+                        
+                        
+                        <span class="badge badge-secondary mr-1" style="background-color:Black;">rust</span>
+                        
+                        <span class="badge badge-secondary mr-1" style="background-color:Black;">go</span>
+                        
+                        <span class="badge badge-secondary mr-1" style="background-color:Black;">python</span>
+                        
+                        <span class="badge badge-secondary mr-1" style="background-color:Black;">ghidra</span>
+                        
+                        <span class="badge badge-secondary mr-1" style="background-color:Black;">wireshark</span>
+                        
+                      
+                      </div>
+                    </div>
+                    
+                    <div class="list-group">
+                      <div class="list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-between">
+                          <h5 class="mb-1">Google</h5>
+                          <p>Event Threat Detection</p>
+                          <small>May 2022 - August 2022</small>
+                        </div>
+                        <p class="mb-1">On Google Cloud’s Event Threat Detection Team, I initially worked on building customer-configurable detection modules to identify IAM-based privilege escalation attacks.   After finishing the project two months early, I picked up a project that would allow security engineers to run YARA-L and SQL rules against Google Cloud Platform logs in real time.   I specifically worked on parsing log data out into a table so commands could be run against them.   As of now, the custom module code is in production.
+</p>
+                        
+                        
+                        <span class="badge badge-secondary mr-1" style="background-color:Black;">java</span>
+                        
+                        <span class="badge badge-secondary mr-1" style="background-color:Black;">c</span>
+                        
+                        <span class="badge badge-secondary mr-1" style="background-color:Black;">c++</span>
+                        
+                        <span class="badge badge-secondary mr-1" style="background-color:Black;">go</span>
+                        
+                        <span class="badge badge-secondary mr-1" style="background-color:Black;">sql</span>
+                        
+                      
+                      </div>
+                    </div>
+                    
+                    <div class="list-group">
+                      <div class="list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-between">
+                          <h5 class="mb-1">Google</h5>
+                          <p>Cross Media Measurement</p>
+                          <small>May 2021 - August 2021</small>
+                        </div>
+                        <p class="mb-1">On Google Ad’s Cross Media Measurement Team, I collaborated with Facebook, Amazon, and other companies to measure ad views across various media platforms to provide users with more diverse ads and advertising companies with more accurate data.    I specifically worked on securing user data.  This involved building a library to encrypt identifier-payload pairs for a Panel Match Batch Lookup Workflow.   Encryption consisted of methods such as AES, HKDF, SHA256, and Deterministic Commutative Encryption. As of now, the code is in production.
+</p>
+                        
+                        
+                        <span class="badge badge-secondary mr-1" style="background-color:Black;">c++</span>
+                        
+                        <span class="badge badge-secondary mr-1" style="background-color:Black;">bazel</span>
+                        
+                        <span class="badge badge-secondary mr-1" style="background-color:Black;">git</span>
+                        
+                      
+                      </div>
+                    </div>
+                    
+              </div>
+            
+          
+        
+           
+          
+              <div class="tab-pane overflow-auto" id="research" role="tabpanel" aria-labelledby="research-tab">  
+                <p><i></i></p>
+                  
+                  <div class="media mt-2">
+                    <div class="media-body">
+                      <h5 class="mt-0"><a href="https://github.com/FoRTE-Research" class="highlighted">FoRTE</a></h5>
+                      The FoRTE lab focuses on research that challenges the intersection of hardware and software.   With a focus in security, systems, and architecture, the lab is known for its work in fuzzing.   Under the direction of Dr. Matthew Hicks, the research I conduct with this lab centers around how hardware can be fuzzed more efficiently and with better coverage.   Specifically, I will be working on a better implementation for fuzzing processors.
+
+                    </div>
+                  </div>
+                  <br />
+                  
+                  <div class="media mt-2">
+                    <div class="media-body">
+                      <h5 class="mt-0"><a href="https://security.vt.edu/" class="highlighted">IT Security Office</a></h5>
+                      The IT Security Office is the office that oversees Virginia Tech’s technology, services, and security.    For the last two years, I have worked with the ITSO, under the direction of Randy Marchany, to develop a website that provides researchers, faculty, and other users a simple way to figure out where to best store their data securely.   Now, I am writing simple and clear procedures for individuals to follow to increase Virginia Tech’s cyber defenses from CIS Control IG1 to IG2.  
+
+                    </div>
+                  </div>
+                  <br />
+                  
+                </div>        
+              </div>
+            
+          
+        
+      </div>
+  </div>
+</div>
+
+
+
+<!-- ANIMATE.JS ANIMATE LIBRARY
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous"></script>
+-->
+
+
+<!--JS FUNCTION FOR RECENT WORK SECTION -->
+<script>
+    $('#test-list a').on('click', function (e) {
+    e.preventDefault()
+    $(this).tab('show')
+    })
+</script> 
+
+<!-- OPTIONAL TOAST JS FUNCTION-->
+<script>
+    $(document).ready(function() {
+        $(".toast").toast("show");
+    });
+</script>
+
+
+<script>
+$('body').scrollspy({ target: '#list-example' })
+</script>
+
+<script>
+$('.collapse').collapse()
+</script>
+
+<script>
+$('.show').show()
+</script>
+
+    </div>
+    <div class="dumbarton-spacer"></div>
+  </body>
+</html>
