@@ -1,0 +1,37 @@
+- School: MITRE
+  Degree: 
+  Program: Cyber Threat Intelligence and Adversary Emulation
+  id: Graduate Cyber Intern
+  data-id: data-harv1
+  heading-id: head-harv1
+  StartDate: May 2023
+  EndDate: August 2023
+  first: true   # one must be true to properly display
+  description: >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+- School: Google
+  Degree: 
+  Program: Event Threat Detection
+  id: POL-380-Human-Rights
+  data-id: data-princ1   
+  heading-id: head-princ1  # This can be any random string as long as each teaching set has a unique one. 
+  StartDate: May 2022
+  EndDate: August 2022
+  first: false
+  Icon: /assets/img/icons/2x/princeton-crop.png      # Make this icon small, think 30px/30px
+  description: >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+- School: Google
+  Degree: 
+  Program: Cross Media Measurement
+  id: POL-380-Human-Rights
+  data-id: data-princ1   
+  heading-id: head-princ1  # This can be any random string as long as each teaching set has a unique one. 
+  StartDate: May 2021
+  EndDate: August 2021
+  first: false
+  Icon: /assets/img/icons/2x/princeton-crop.png      # Make this icon small, think 30px/30px
+  description: >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.

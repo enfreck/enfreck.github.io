@@ -1,7 +1,7 @@
 abyss:
     name: abyss
-    nav-color: "#10292e"
-    nav-text: "#149f98"
+    nav-color: "#432e3f" #10292e
+    nav-text: "#b98798"
     title-font: "Noto Sans JP"
     link-font: "#272343"
     link-color: "#272343"
@@ -11,10 +11,10 @@ abyss:
     social-color: "#CCCCCC"
     footer-social-color: "Black"
     button-color: "black"
-    home-highlight-background: "#10292e"
-    home-highlight-header-text: "#149f98"
+    home-highlight-background: "#432e3f"
+    home-highlight-header-text: "#b98798"
     education-title-font: "Noto Sans JP"
-    education-title-size: "18px"
+    education-title-size: "24px"
     education-entry-font: "Noto Sans JP"
     education-entry-size: "18px"
     education-section-size: "15px"
@@ -52,7 +52,7 @@ dark:
     home-highlight-background: "#10292e"
     home-highlight-header-text: "#149f98"
     education-title-font: "Noto Sans JP"
-    education-title-size: "18px"
+    education-title-size: "24px"
     education-entry-font: "Noto Sans JP"
     education-font-color: "#eeeeee"
     education-entry-size: "18px"

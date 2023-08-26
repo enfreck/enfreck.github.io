@@ -1,17 +1,15 @@
-- Course: POL 554 International Security Studies
-  Program: School of Public and International Affairs  
-  School: Harvard
-  id: POL554
-  description: >
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-  link: https://example.com
+- Course: CS 5204 - Operating Systems
+  Program:
+  School:
+  id:
+  description:
+  link: 
 
-- Course: POL 585 International Political Economy
-  Program: School of Public and International Affairs
-  School: Harvard
-  id: POL585
-  description: >
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.   
-  link: https://example.com
+- Course: CS 5560 - Fundamentals of Information Security
+- Course: CS 5244 - Web Application Development
+- Course: CS 4264 - Principles of Computer Security
+- Course: ECE 4560 - Computer and Network Security Fundamentals
+- Course: ECE 4424 - Machine Learning
+- Course: ECE 4524 - Artificial Intelligence
+- Course: MATH 4175 - Cryptography
+- Course: CS 3264 - Software Reverse Engineering
