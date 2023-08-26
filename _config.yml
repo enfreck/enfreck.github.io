@@ -12,7 +12,7 @@ title: Erin Freck
 email: 
 description: Erin Freck's personal website
 baseurl:                                       # the subpath of your site, e.g. /blog
-url: "https://dumbarton.netlify.app/"          # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://enfreck.github.io/"          # the base hostname & protocol for your site, e.g. http://example.com
 image: /assets/img/icon/favicon-16x16.png               # used to generate site link preview
 image_alt:     # image description
 
